@@ -1,0 +1,56 @@
+.seccion {
+    text-align: center;
+    font-size: large;
+}
+.articulo1 {
+    background-color:beige;
+}
+.articulo2{
+    background-color: rgb(89, 241, 162);
+}
+.articulo3{
+    background-color: rgb(238, 243, 104);
+    font-size: xx-small;
+
+}
+.articulo4{
+    background-color: rgb(241, 175, 89);
+    font-size: small;
+}
+.articulo5{
+    background-color: rgb(249, 112, 112);
+}
+h1 {
+    font-size:xx-large;
+}
+h2 {
+    font-size: large;
+    color: red;
+    text-align: auto;
+}
+span {
+    font-weight: bold;
+}
+.grid-container img {
+    /* max-width: 400px;
+    max-width: 300px; */
+    width: 50%;
+    height: auto;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 5px;
+    justify-content: space-around;
+    align-content: center;
+}
+.grid-item2 table,th,td {
+    table-layout: auto;
+    border: 1px solid darkred;
+    margin: auto auto 5px;
+}
+table {
+    margin:15px
+}
+
