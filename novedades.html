@@ -27,7 +27,7 @@
                 Escuela de Natación Acquamarina
             </div>
             <div class="grid-encabezado-logo">
-                <img src="img\contacto50.png" alt="Logo Sobre">
+                <a href="novedades.html#contacto"><img src="img\contacto50.png" alt="Logo Sobre"></a>
                 <br>
                 <a class="redsoc" href="https://www.facebook.com" target="_blank"><img src="img\facebook32.png" alt="Logo Facebook"></a>
                 <a class="redsoc" href="https://www.instagram.com" target="_blank"><img src="img\instagram32.png" alt="Logo Instagram"></a>
@@ -669,8 +669,31 @@
                 </div>
             </div>
         </article>
-        <article class="articulo5" id="contacto">
+        <article class="articulo5" id="contacto" name="contacto">
             <h1>Contacto</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Información para la Consulta</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre...">
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido...">
+                    <br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su Teléfono...">
+                    <br>
+                    <label for="mail">Mail:</label>
+                    <input type="text" id="mail" name="mail" placeholder="Ingrese su Mail...">
+                    <br>
+                    <label for="consulta">Consulta:</label>
+                    <br>
+                    <!-- <input type="textarea" id="consulta" name="consulta"> -->
+                    <textarea id="consulta" name="consulta" rows="10" cols="30" placeholder="Ingrese su Consulta..."></textarea>
+                    <br>
+                    <input type="submit">
+                </fieldset>
+            </form>
         </article>
     </section>
 </body>
