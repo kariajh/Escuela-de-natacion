@@ -1,6 +1,7 @@
 .seccion {
     text-align: center;
     font-size: large;
+    border: 5%;
 }
 .articulo1 {
     background-color:beige;
@@ -11,7 +12,6 @@
 .articulo3{
     background-color: rgb(238, 243, 104);
     font-size: xx-small;
-
 }
 .articulo4{
     background-color: rgb(241, 175, 89);
@@ -52,7 +52,7 @@ span {
     margin: auto auto 5px;
 }
 table {
-    margin:15px
+    margin: 15px
 }
 form {
     width: auto;

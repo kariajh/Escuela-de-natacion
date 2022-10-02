@@ -1,20 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0%;
+}
 .output {
     font: 1rem 'Poppins', Sans-serif;
+    /* width: 100vw; */
+    border: none;
 }
 body{
     background-color: rgba(77, 199, 255, 0.872);
     font-family: "Poppins";
+    margin: 5px;
 }
 header {
     background-image:url(../img/fondo_agua.gif) ;
     padding: 10px;
-    position: sticky;
-    border: none;
+    position: relative;
     font-family: "MuseoModerno";
     font-size: x-large;
+    width: 100%;
+    margin: 5px;
+    vertical-align: top;
+    z-index: 1;
 }
 section {
     position: relative;
+    /* top: 20vh; */
+    margin: 5px;
 }
 .grid-encabezado {
     display: grid;
@@ -44,14 +56,21 @@ nav {
     margin: 5px;
     box-shadow: 2px 2px black;
 }
+.nav img {
+    width: 25px;
+}
+.cuerpo {
+    width: 70%;
+}
 .flecha {
-    text-align: right;
-    position:sticky;
-    margin: 5px;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
 }
 footer {
     background-color: rgb(39, 39, 172);
     color: aquamarine;
     font-size: x-small;
     text-align: center;
+    height: 3vw;
 }
