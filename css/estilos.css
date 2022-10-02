@@ -4,7 +4,12 @@
 body{
     background-color: rgba(77, 199, 255, 0.872);
     font-family: "Poppins";
-}
+    text-align: justify;
+   }
+   h1, h2, h3 {
+    font-weight: bold;
+    text-decoration: underline ;
+   }
 header {
     background-image:url(../img/fondo_agua.gif) ;
     padding: 10px;
@@ -29,6 +34,14 @@ section {
     border: none;
     font-size: 200%;
     font-weight: bold;
+}
+.imagenes-instalaciones{
+    height: 300px;
+    width: 300px;
+}
+.imagenes-team{
+    height: 100px;
+    width: 150px;
 }
 nav {
     text-align: center;
@@ -55,3 +68,4 @@ footer {
     font-size: x-small;
     text-align: center;
 }
+
