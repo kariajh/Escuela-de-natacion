@@ -1,0 +1,119 @@
+.output {
+    font: 1rem 'Poppins', Sans-serif;
+}
+
+ /*Header*/
+
+header {
+    background-image:url(../img/fondo_agua.gif) ;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-family: "MuseoModerno";
+    font-size: x-large;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;  
+}
+
+.grid-encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.encabezado-redsoc a{
+    display: inline-block;
+    
+    border: none;
+}
+.grid-encabezado-nombre {
+    text-align: center;
+    border: none;
+    font-size: 200%;
+    font-weight: bold;
+}
+nav {
+    text-align: center;
+}
+.nav {
+    background: linear-gradient(to bottom, rgb(90, 148, 242), blue);
+    border: 1px;
+    text-decoration: none;
+    border-radius: 15%;
+    /* background-color: blue; */
+    color: white;
+    padding: 0px 5px;
+    margin: 5px;
+    box-shadow: 2px 2px black;
+}
+
+/*Body*/
+
+body{
+    background-color: rgba(77, 199, 255, 0.872);
+    font-family: "Poppins";
+    margin: 0;
+}
+.contenedor-actividades{
+    padding: 20px 60px;
+    margin:auto; 
+}
+.actividades{
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+/*actividades*/
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 30px 0px 0px;
+    background: hsla(187, 42%, 85%, 0.203);
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px rgba(0, 1, 0, 0.189);
+}
+
+.titulo{
+    color: rgb(52, 63, 93);
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0px 0px 10px 15px;
+}
+.sobre-nosotros .contenedor-textos{
+    width: 45%;
+}
+
+.contenido-textos h4{
+    margin-bottom: 10px;
+    padding: 0px 15px 10px 15px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 30px;
+    text-align: justify;
+}
+
+.img{
+    width: 45%;
+}
+.hover-actividades{
+    text-align: end;
+    padding: 15px;
+}
+
+.hover-actividades a{
+    color:rgb(50, 47, 47);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+a:hover{
+    background: rgba(95, 160, 173, 0.447);
+}
