@@ -1,23 +1,30 @@
+body{
+    background-color: rgba(77, 199, 255, 0.872);
+    font-family: 'Poppins', Sans-serif, Times;
+    margin: 0.5em;
+}
 .seccion {
+    position: relative;
     text-align: center;
     font-size: large;
     border: 5%;
+    top: 9em;
 }
 .articulo1 {
     background-color:beige;
 }
-.articulo2{
+.articulo2 {
     background-color: rgb(89, 241, 162);
 }
-.articulo3{
+.articulo3 {
     background-color: rgb(238, 243, 104);
     font-size: xx-small;
 }
-.articulo4{
+.articulo4 {
     background-color: rgb(241, 175, 89);
     font-size: small;
 }
-.articulo5{
+.articulo5 {
     background-color: rgb(249, 112, 112);
 }
 h1 {
