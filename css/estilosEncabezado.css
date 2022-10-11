@@ -48,9 +48,6 @@ header {
 nav {
     text-align: center;
 }
-nav a:hover{
-    background: rgba(95, 160, 173, 0.447);
-}
 .nav {
     background: linear-gradient(to bottom, rgb(90, 148, 242), blue);
     border: 1px;
@@ -61,6 +58,11 @@ nav a:hover{
     padding: 0px 5px;
     margin: 5px;
     box-shadow: 2px 2px black;
+}
+nav a:hover{
+    transition: color 2s;
+    background: rgba(95, 160, 173, 0.447);
+    color: black;
 }
 .nav img {
     width: 25px;

@@ -5,7 +5,7 @@ body {
     font-size: 0.8em;
     text-align: center;
     margin-top: 0.5rem;
-    height: 100%;
+    height: auto;
     width: 100%;
     line-height: 0.2em;
 }
@@ -16,18 +16,27 @@ body {
     display: inline-block;
 }
 .contacto {
-    width: 50%;
+    width: 40%;
 }
 .autores {
     width: 20%;
 }
 .creditos {
-    width: 30%;
+    width: 40%;
+    line-height: 0.5em;
+}
+/* Color del link sin visitar */
+.creditos a:link {
+    color:lightblue;
+}
+/* Color del link una vez visitado */
+.creditos a:visited {
+    color:lightcoral;
 }
 .titulo {
     color: white;
 }
-footer {
+.copyright {
     margin: 0;
     background-color:black;
     display: inline;
