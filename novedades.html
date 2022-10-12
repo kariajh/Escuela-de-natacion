@@ -680,28 +680,55 @@
         </article>
         <article class="articulo5" id="contacto" name="contacto">
             <h1>Consultas</h1>
-            <form action="">
+            <form name="formConsulta" action="">
                 <fieldset>
                     <legend>Información para la Consulta</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre...">
-                    <br>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido...">
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su Teléfono...">
-                    <br>
-                    <label for="mail">Mail:</label>
-                    <input type="text" id="mail" name="mail" placeholder="Ingrese su Mail...">
-                    <br>
-                    <label for="consulta">Consulta:</label>
-                    <br>
-                    <!-- <input type="textarea" id="consulta" name="consulta"> -->
-                    <textarea id="consulta" name="consulta" rows="10" cols="30" placeholder="Ingrese su Consulta..."></textarea>
-                    <br>
-                    <input type="submit">
+                    <table>
+                        <tr>
+                            <td class="etiqueta">Nombre:</td>
+                            <td><input type="text" class="texto" id="txtNombre" name="nombre" placeholder="Ingrese su Nombre..." maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta">Apellido:</td>
+                            <td><input type="text" class="texto" id="txtApellido" name="apellido" placeholder="Ingrese su Apellido..." maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta">Teléfono:</td>
+                            <td><input type="tel" class="texto" id="txtTelefono" name="telefono" placeholder="Ingrese su Teléfono..." maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta">Mail:</td>
+                            <td><input type="text" class="texto" id="txtMail" name="mail" placeholder="Ingrese su Mail..." maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta">Consulta:</td>
+                            <td><textarea class="texto" id="txtConsulta" name="consulta" rows="10" cols="30" placeholder="Ingrese su Consulta, máximo 500 caracteres..." maxlength="500"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="boton" colspan="2">
+                                <input type="button" id="btEnviar" onclick="validarTextos()" value="Enviar Consulta">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="texto" id="apellido" name="apellido" placeholder="Ingrese su Apellido...">
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="texto" id="telefono" name="telefono" placeholder="Ingrese su Teléfono...">
+                        <br>
+                        <label for="mail">Mail:</label>
+                        <input type="text" class="texto" id="mail" name="mail" placeholder="Ingrese su Mail...">
+                        <br>
+                        <label for="consulta">Consulta:</label>
+                        <br> -->
+                        <!-- <input type="textarea" id="consulta" name="consulta"> -->
+                        <!-- <textarea id="consulta" name="consulta" rows="10" cols="30" placeholder="Ingrese su Consulta..."></textarea>
+                        <br> -->
+                        <!-- <input type="submit"> -->
+                        <!-- <button onclick="validarTextos()">Enviar Consulta</button> -->
                 </fieldset>
+                <script src="js/novedades.js"></script>
             </form>
         </article>
     </section>

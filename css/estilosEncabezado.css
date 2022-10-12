@@ -78,3 +78,22 @@ nav a:hover{
     /* height: 100%; */
     height: 11rem;
 }
+
+/* Celulares */
+@media only screen and (max-width: 450px) {
+    .encabezado-contenedor {
+        margin: 2px;
+    }
+    .encabezado-logo .img {
+        image-resolution: 32;
+    }
+    .encabezado-nombre {
+        font-size: 30px;
+        line-height: 1em;
+        padding: 0.1rem;
+    }
+    .encabezado-redsoc {
+        display: inline;
+        margin-right: 0.1em;
+    }
+    }
