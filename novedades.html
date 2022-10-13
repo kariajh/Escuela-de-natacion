@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="es">
     <!-- Hoja de Estilo -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilosEncabezado.css">
     <link rel="stylesheet" href="css/estilosNovedades.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins&family=MuseoModerno&display=swap" rel="stylesheet">
     <!-- Íconos -->
+    <link rel="icon" type="image/png" href="img/logo64.png" sizes="64x64" />
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
     <script src="https://kit.fontawesome.com/19ff95e2a9.js" crossorigin="anonymous"></script>
@@ -19,15 +21,15 @@
 </head>
 <body>
     <header>
-        <a name="arriba"></a>
-        <div class="grid-encabezado">
-            <div class="grid-encabezado-logo">
+        <!-- <a name="arriba"></a> -->
+        <div class="encabezado-contenedor">
+            <div class="encabezado-logo">
                 <a href="index.html"><img src="img\logo64.png" alt="Logo Escuela"></a>
             </div>
-            <div class="grid-encabezado-nombre">
+            <div class="encabezado-nombre">
                 Escuela de Natación Acquamarina
             </div>
-            <div class="grid-encabezado-logo">
+            <div class="encabezado-redsoc">
                 <a href="novedades.html#contacto"><img src="img\contacto50.png" alt="Logo Sobre"></a>
                 <br>
                 <a class="redsoc" href="https://www.facebook.com" target="_blank"><img src="img\facebook32.png" alt="Logo Facebook"></a>
@@ -37,17 +39,17 @@
         </div>
         <nav>
             <a class="nav" href="index.html"><img src="img/casa.png" alt=""></a>
-            <a class="nav" href="#">Nosotros</a>
+            <a class="nav" href="nosotros.html">Nosotros</a>
             <a class="nav" href="actividades.html">Actividades</a>
             <a class="nav" href="novedades.html">Novedades</a>
         </nav>
     </header>
     <section class="seccion">
-        <div class="flecha">
+        <!-- <div class="flecha">
             <a href="#arriba">
                 <i class="fa-solid fa-arrows-up-to-line fa-2xl"></i>
             </a>
-        </div>
+        </div> -->
         <article class="articulo1">
             <h1>Colonia de vacaciones</h1>
             <h2>Próximamente abrimos la inscripción</h2>
@@ -677,7 +679,7 @@
             </div>
         </article>
         <article class="articulo5" id="contacto" name="contacto">
-            <h1>Contacto</h1>
+            <h1>Consultas</h1>
             <form action="">
                 <fieldset>
                     <legend>Información para la Consulta</legend>
@@ -703,9 +705,26 @@
             </form>
         </article>
     </section>
-    <footer>
-        Desarrollado por: K. Ajhuacho, M.A. Regueira, A.N. Vázquez
-        ®2022
+
+    <footer class="piePagina">
+        <iframe src="PiePagina.html" class="iframe-piePagina" frameborder="0"></iframe>
     </footer>
+    <!-- <footer class="piePagina">
+        <div class="piePagina-contenedor">
+            <div>
+                <p>CONTACTO</p>
+                <p>Av. Directorio 2050</p>
+                <p>C.A.B.A.</p>
+                <p>Argentina</p>
+                <br>
+                <P>Tel. 54 11 0000 0000</P>
+                <p>acquamarina@acquamarina.com.ar</p>
+            </div>
+            <div>
+                <p>Diseñado por: K. Ajhuacho, M.A. Regueira, A.N. Vázquez</p>
+                <p>®2022</p>
+            </div>
+        </div>
+    </footer> -->
 </body>
 </html>
