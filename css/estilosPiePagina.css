@@ -7,7 +7,7 @@ body {
     margin-top: 0.5rem;
     height: auto;
     width: 100%;
-    line-height: 0.2em;
+    line-height: 0.8em;
 }
 .contenedor {
     display: flex;
@@ -23,7 +23,7 @@ body {
 }
 .creditos {
     width: 40%;
-    line-height: 0.5em;
+    line-height: 1em;
 }
 /* Color del link sin visitar */
 .creditos a:link {

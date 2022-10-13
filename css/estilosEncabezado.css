@@ -3,7 +3,7 @@
 
 header {
     background-image:url(../img/fondo_agua.gif) ;
-    padding: 0.5rem;
+    /* padding: 2px; */
     border: none;
     font-family: 'MuseoModerno', Sans-serif, Times;
     font-size: x-large;
@@ -71,7 +71,8 @@ nav a:hover{
 /* Footer */
 .piePagina {
     /* height: 15rem; */
-    margin-top: 10em;
+    margin-top: 13em;
+    margin-bottom: 0;
 }
 .iframe-piePagina {
     width: 100%;
@@ -96,4 +97,23 @@ nav a:hover{
         display: inline;
         margin-right: 0.1em;
     }
+}
+
+/* iPad */
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+    .encabezado-contenedor {
+        margin: 2px;
     }
+    .encabezado-logo .img {
+        image-resolution: 32;
+    }
+    .encabezado-nombre {
+        font-size: 30px;
+        line-height: 1em;
+        padding: 0.1rem;
+    }
+    .encabezado-redsoc {
+        display: inline;
+        margin-right: 0.1em;
+    }
+}
