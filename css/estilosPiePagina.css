@@ -1,25 +1,31 @@
 body {
+    box-sizing: border-box;
     font-family: 'Poppins', Sans-serif, Times;
     background-color: rgb(39, 39, 172);
     color: aquamarine;
     font-size: 0.8em;
     text-align: center;
-    margin-top: 0.5rem;
-    height: auto;
+    margin: 0.2rem 0;
     width: 100%;
+    height: auto;
     line-height: 0.2em;
 }
 .contenedor {
     display: flex;
-}
-.info {
-    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 .contacto {
     width: 40%;
 }
 .autores {
     width: 20%;
+    /* height: auto; */
+    line-height: 0.5em;
 }
 .creditos {
     width: 40%;
@@ -40,4 +46,46 @@ body {
     margin: 0;
     background-color:black;
     display: inline;
+}
+
+/* Celulares */
+@media only screen and (max-width: 450px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        line-height: 0.5em;
+    }
+    .contacto {
+        width: 100%;
+    }
+    .autores {
+        width: 100%;
+    }
+    .creditos {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* iPad */
+@media only screen and (min-width: 450px) and (max-width: 690px) {
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 0.5em;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .contacto {
+        width: 50%;
+    }
+    .autores {
+        width: 50%;
+        margin-top: 0;
+        
+    }
+    .creditos {
+        flex-direction: column;
+        width: 100%;
+    }
 }

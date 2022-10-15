@@ -1,14 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.output {
+    font: 1rem 'Poppins', Sans-serif, Times;
+    border: none;
+}
 body{
     background-color: rgba(77, 199, 255, 0.872);
     font-family: 'Poppins', Sans-serif, Times;
     margin: 0.5em;
+    padding-top: 2em; /* Padding para que no se encime con el Encabezado*/
+    overflow: auto;
 }
 .seccion {
     position: relative;
     text-align: center;
     font-size: large;
     border: 5%;
-    top: 9em;
+    top: 10em;
 }
 .articulo1 {
     background-color:beige;
@@ -24,9 +34,6 @@ body{
     background-color: rgb(241, 175, 89);
     font-size: small;
 }
-.articulo5 {
-    background-color: rgb(249, 112, 112);
-}
 h1 {
     font-size:xx-large;
 }
@@ -34,7 +41,7 @@ h2 {
     font-size: large;
     color: red;
     text-align: auto;
-    margin: 25px;
+    /* margin: 25px; */
 }
 span {
     font-weight: bold;
@@ -59,28 +66,52 @@ span {
     margin: auto auto 5px;
 }
 table {
-    margin: 15px
+    margin: 15px;
+}
+
+/* Contacto */
+
+.articulo5 {
+    background-color: rgb(249, 112, 112);
+}
+.articulo5 .etiqueta {
+    text-align: right;
+    width: 2em;
 }
 form {
     width: auto;
-    margin: 5px 20%;
+    margin: 0.5em 10%;
+}
+form table {
+    width: 95%;
+    /* margin: 0.5em; */
 }
 /* legend {
     margin: 5px 10px;
 } */
-input:focus,textarea:focus {
-    border: 1px solid violet;
-    background-color: rgb(219, 79, 241);
-    color: white;
+form .etiqueta {
+    padding: 0 0.5em;
 }
+
 input[type=text],input[type=email],input[type=tel]{
-    width: 70%;
+    width: 90%;
     border-radius: 5px;
+    align-items: left;
 }
 textarea {
-    width: 70%;
-    height: 150px;
+    width: 90%;
+    height: 10em;
     border-radius: 5px;
     resize: none;
     box-sizing: border-box;
+    margin: 0.2 0.5em;
 }
+input:focus,textarea:focus {
+    border: 1px solid violet;
+    background-color: rgb(100, 29, 111);
+    color: white;
+}
+/* Celulares */
+/* @media only screen and (max-width: 450px) {
+
+} */
