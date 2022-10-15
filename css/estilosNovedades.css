@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.output {
+    font: 1rem 'Poppins', Sans-serif, Times;
+    border: none;
+}
+body{
+    background-color: rgba(77, 199, 255, 0.872);
+    font-family: 'Poppins', Sans-serif, Times;
+    margin: 0.5em;
+    padding-top: 2em; /* Padding para que no se encime con el Encabezado*/
+    overflow: auto;
+}
+.seccion {
+    position: relative;
+    text-align: center;
+    font-size: large;
+    border: 5%;
+    top: 10em;
+}
+.articulo1 {
+    background-color:beige;
+}
+.articulo2 {
+    background-color: rgb(89, 241, 162);
+}
+.articulo3 {
+    background-color: rgb(238, 243, 104);
+    font-size: xx-small;
+}
+.articulo4 {
+    background-color: rgb(241, 175, 89);
+    font-size: small;
+}
+h1 {
+    font-size:xx-large;
+}
+h2 {
+    font-size: large;
+    color: red;
+    text-align: auto;
+    /* margin: 25px; */
+}
+span {
+    font-weight: bold;
+}
+.grid-container img {
+    /* max-width: 400px;
+    max-width: 300px; */
+    width: 50%;
+    height: auto;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 5px;
+    justify-content: space-around;
+    align-content: center;
+}
+.grid-item2 table,th,td {
+    table-layout: auto;
+    border: 1px solid darkred;
+    margin: auto auto 5px;
+}
+table {
+    margin: 15px;
+}
+
+/* Contacto */
+
+.articulo5 {
+    background-color: rgb(249, 112, 112);
+}
+.articulo5 .etiqueta {
+    text-align: right;
+    width: 2em;
+}
+form {
+    width: auto;
+    margin: 0.5em 10%;
+}
+form table {
+    width: 95%;
+    /* margin: 0.5em; */
+}
+/* legend {
+    margin: 5px 10px;
+} */
+form .etiqueta {
+    padding: 0 0.5em;
+}
+
+input[type=text],input[type=email],input[type=tel]{
+    width: 90%;
+    border-radius: 5px;
+    align-items: left;
+}
+textarea {
+    width: 90%;
+    height: 10em;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    margin: 0.2 0.5em;
+}
+input:focus,textarea:focus {
+    border: 1px solid violet;
+    background-color: rgb(100, 29, 111);
+    color: white;
+}
+/* Celulares */
+/* @media only screen and (max-width: 450px) {
+
+} */
