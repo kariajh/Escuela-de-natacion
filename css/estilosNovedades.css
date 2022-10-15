@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.output {
+    font: 1rem 'Poppins', Sans-serif, Times;
+    border: none;
+}
 body{
     background-color: rgba(77, 199, 255, 0.872);
     font-family: 'Poppins', Sans-serif, Times;
     margin: 0.5em;
+    padding-top: 2em; /* Padding para que no se encime con el Encabezado*/
+    overflow: auto;
 }
 .seccion {
     position: relative;
@@ -102,6 +112,6 @@ input:focus,textarea:focus {
     color: white;
 }
 /* Celulares */
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
 
-}
+} */
