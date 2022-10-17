@@ -41,32 +41,55 @@ h2 {
     font-size: large;
     color: red;
     text-align: auto;
-    /* margin: 25px; */
+    /* margin: 0 25px; */
 }
 span {
     font-weight: bold;
 }
-.grid-container img {
-    /* max-width: 400px;
-    max-width: 300px; */
-    width: 50%;
+.container img {
+    width: 20rem;
     height: auto;
 
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 35% 65%;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 35% 65%;*/
     column-gap: 5px;
     justify-content: space-around;
     align-content: center;
 }
-.grid-item2 table,th,td {
-    table-layout: auto;
-    border: 1px solid darkred;
-    margin: auto auto 5px;
+.item1 {
+    flex: 35%;
+}
+.item2 {
+    flex: 64%;
+}
+.articulo3 .item1,.item2 {
+    flex: 33%;
+    flex-direction: row;
+}
+.articulo3 .item1:first-child {
+    flex: 35% ;
+}
+.articulo3 .item2:first-child {
+    flex: 64% ;
+}
+.articulo1 h2 {
+    text-align: left;
+    margin-left: 11rem;
 }
 table {
     margin: 15px;
+}
+th {
+    padding: 0.2em
+}
+.item2 table,th,td {
+    table-layout: auto;
+    border: 1px solid darkred;
+    margin: auto auto 5px;
+    font-size: medium;
 }
 
 /* Contacto */
@@ -84,11 +107,7 @@ form {
 }
 form table {
     width: 95%;
-    /* margin: 0.5em; */
 }
-/* legend {
-    margin: 5px 10px;
-} */
 form .etiqueta {
     padding: 0 0.5em;
 }
@@ -111,7 +130,72 @@ input:focus,textarea:focus {
     background-color: rgb(100, 29, 111);
     color: white;
 }
-/* Celulares */
-/* @media only screen and (max-width: 450px) {
 
-} */
+/* Footer */
+.piePagina {
+    margin-top: 12em;
+}
+
+/* Celulares */
+@media only screen and (max-width: 450px) {
+    .seccion {
+        top: 8em;
+        font-size: small;
+    }
+    h1 {
+        font-size: large;
+    }
+    h2 {
+        font-size: medium;
+    }
+    .container img {
+        width: 13em;
+    }
+    .articulo1 h2 {
+        margin: 0;
+        text-align: center;
+    }
+    .item1,item2 {
+        flex: 100%;
+    }
+    .item2 table,th,td {
+        font-size: x-small;
+    }
+
+    /* Footer */
+    .piePagina {
+        margin-top: 7em;
+    }
+}
+
+/* iPad */
+@media only screen and (min-width: 450px) and (max-width: 810px) {
+    .seccion {
+        top: 13rem;
+        /* font-size: medium; */
+    }
+    .container img {
+        width: 13rem;
+    }    
+    .articulo1 h2 {
+        margin: 0 1em;
+        text-align: left;
+    }
+    .item1 {
+        flex: 35%;
+    }
+    .item2 {
+        flex: 64%;
+    }
+    .item2 table,th,td {
+        table-layout: auto;
+        border: 1px solid darkred;
+        margin: auto auto 5px;
+        font-size: small;
+    }
+        
+    /* Footer */
+    .piePagina {
+        margin-top: 14em;
+    }
+}

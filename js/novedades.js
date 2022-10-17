@@ -24,3 +24,26 @@ function validarTextos () {
     }
 }
 
+function validarTelefono(){
+    const url = 'https://api.apilayer.com/number_verification/validate?number='
+    let valido=false;
+    let myHeaders = new Headers();
+    myHeaders.append("apikey", "YngdbKeQj4y7xZ6f5r75lxZQhr6LRLFk");
+    
+    let requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+      headers: myHeaders
+    };
+    
+    fetch(url + "number", requestOptions)
+      .then(response => response.text())
+      .then(data => {
+        valido = data.valid;
+      })
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+    
+    
+  
+}
