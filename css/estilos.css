@@ -3,7 +3,10 @@
 }
 body{
     background-color: rgba(77, 199, 255, 0.872);
-    font-family: "Poppins";
+    font-family: 'Poppins', Sans-serif, Times;
+    margin: 0.5em;
+    padding-top: 2em;
+    overflow: auto;
     text-align: justify;
    }
    h1, h2, h3 {
@@ -12,7 +15,7 @@ body{
    }
 header {
     background-image:url(../img/fondo_agua.gif) ;
-    padding: 10px;
+    padding: 1px;
     position: sticky;
     border: none;
     font-family: "MuseoModerno";
@@ -20,7 +23,12 @@ header {
 }
 section {
     position: relative;
-}
+    text-align: center;
+    font-size: large;
+    border: 5%;
+    top: 10em;
+    }
+   
 .grid-encabezado {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -34,6 +42,20 @@ section {
     border: none;
     font-size: 200%;
     font-weight: bold;
+}
+.grid-container img {
+    /* max-width: 400px;
+    max-width: 300px; */
+    width: 50%;
+    height: auto;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 5px;
+    justify-content: space-around;
+    align-content: center;
 }
 .imagenes-instalaciones{
     height: 300px;
