@@ -11,13 +11,16 @@ body{
     font-family: 'Poppins', Sans-serif, Times;
     margin: 0;
     padding-top: 2em; /* Padding para que no se encime con el Encabezado*/
+    box-sizing: border-box;
+    
+    
 }
-section {
+/*section {
     position: relative;
     top: 13rem;
     margin: 0;
     /* z-index: 1; */
-}
+
 .cuerpo {
     width: 70%;
 }
@@ -34,12 +37,11 @@ section {
     height: 3vw;
     width: 100%;
 } */
-
+/*Bienvenida*/
 .bienvenida{
     width: 100%;
-    height: 600px;
+    height: 700px;
     background: hsla(204, 50%, 51%, 0.414);  /* fallback for old browsers */
-    
     background: linear-gradient(to right, hsla(0, 0%, 100%, 0.162), hwb(196 42% 2% / 0.299), #2980B9), url(../img/nadador2.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -48,9 +50,10 @@ section {
 .bienvenida h1{
     display: flex;
     height: 200px;
-    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
     font-size: 50px;
@@ -101,93 +104,142 @@ section {
     color: rgb(36, 44, 65);
 }
 
-/* Carrousel */
-
+/*Carrousel*/
 .galeria{
     width: 100%;
     margin: 0;
+    
 }
-.galeria h2{
-    font-size: 26px;
+.container{
+    width:100%;
+    position: relative;
+}
+.container h2{
+    font-size: 30px;
     line-height: 38px;
     padding-bottom: 24px;
     padding-top: 20px;
-    opacity: .9;
     text-align: center;
     color: rgb(36, 44, 65);
 }
-
-/* imagenes */
-
-.slick-list{
-    position: relative;
-    display: flex;
-    align-items: center;
+.mySlides{
+   display:none;
+   
+}
+.mySlides img{
     width: 100%;
-    height: 400px;
-    padding: 5px 0px;
-    margin: 5px auto;
-    max-width: 90vw;
-    overflow: hidden;
-}
-.slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: .5s ease-in-out;
-    
-}
-.slick{
-    position: relative;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-}
-
-.slick img{
     object-fit: cover;
-    height:400px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
-    transition: .3s ease-in-out;
-    margin-bottom: 20px;
+    height: 80vh;
 }
-.slick img:hover{
-    opacity: .65;
-}
-
-/* buttons */
-
-.slick-arrow{
-    border-radius: 30px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 4;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-    border: 0;
+.prev,
+.next{
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border:  solid #fff 2px;
 }
-.slick-arrow:focus{
-    outline: 0;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-.slick-arrow svg{
-    width: 12px;
-    height: 100%;
-    color: rgba(0,0,0,.7);
+.prev:hover,
+.next:hover{
+    background-color: hsla(0, 5%, 81%, 0.324);
 }
-.slick-prev{
-    left: 0px;
+.elements{
+    text-align: center;
 }
-.slick-next{
-    right: 0px;
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
 }
+.active, .quadrate:hover{
+    background-color: #fff;
+}
+
+/* Celulares */
+@media screen and (max-width:450px) {
+    /*Bienvenida*/
+    .bienvenida{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    }
+.bienvenida h1{
+    text-align: center;
+    height: 0.05em;
+    justify-content: center;
+    }
+    /*Beneficios*/
+    .contenedor-beneficios{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .beneficios-cont{
+        flex-direction:column;
+        justify-content: center;
+        margin: 20px;
+        
+    }
+    .beneficios{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 6px rgba(0, 1, 0, 0.189);
+       
+    }
+    /*Carrousel*/
+    .container{
+        width: 100%;
+    }
+}
+
+/* iPad */
+@media only screen and (min-width: 450px) and (max-width: 690px) {
+    .contenedor-beneficios{
+        width: 100%;
+    }
+    .beneficios-cont{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .beneficios{
+        width: 90%;
+        justify-content: center;
+        box-shadow: 0 0 6px rgba(0, 1, 0, 0.189);
+        margin: 10px;
+    }
+    .container{
+        width: 100%;
+    }
+    .prev,
+    .next{
+        padding: 5px;
+    }
+}
+
 
 
