@@ -10,8 +10,8 @@ body{
     text-align: justify;
    }
    h1, h2, h3 {
+    font-family: 1rem 'Poppins', Sans-serif, Times;
     font-weight: bold;
-    text-decoration: underline ;
    }
 header {
     background-image:url(../img/fondo_agua.gif) ;
@@ -57,13 +57,17 @@ section {
     justify-content: space-around;
     align-content: center;
 }
+.imagenes-header{
+    height: 300px;
+    width:450px;
+}
 .imagenes-instalaciones{
     height: 300px;
-    width: 300px;
+    width: 450px;
 }
 .imagenes-team{
-    height: 100px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
 }
 nav {
     text-align: center;
