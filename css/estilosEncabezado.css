@@ -58,9 +58,9 @@ nav {
     box-shadow: 2px 2px black;
 }
 nav a:hover{
-    transition: color 2s;
     background: rgba(95, 160, 173, 0.447);
     color: black;
+    transition: color 2s;
 }
 .nav img {
     width: 25px;
@@ -126,12 +126,56 @@ nav a:hover{
         margin-top: 14em;
     }
     .iframe-piePagina {
-        height: 23rem;
+        height: 22.5rem;
     }
 }
 
 /* iPad */
-@media only screen and (min-width: 450px) and (max-width: 690px) {
+@media only screen and (min-width: 450px) and (max-width: 466px) {
+
+/*Encabezado*/
+    
+    .encabezado-contenedor {
+        line-height: 1.5em;
+    }
+    .encabezado-logo img {
+        width: 50px;
+    }
+    .encabezado-nombre {
+        font-size: 30px;
+        line-height: 1em;
+        width: 60%;
+    }
+    .encabezado-redsoc {
+        display: inline;
+        margin-bottom: 0;
+    }
+    .encabezado-redsoc img {
+        width: 40px;
+    }
+    .redsoc img {
+        width: 30px;
+    }
+
+/*Menú*/
+
+    nav {
+        font-size: large;
+        margin: 0.1em;
+        line-height: 1.8em;
+    }
+
+/* Footer */
+
+    .piePagina {
+        margin-top: 14em;
+    }
+    .iframe-piePagina {
+        height: 22rem;
+    }
+}
+
+@media only screen and (min-width: 466px) and (max-width: 706px) {
 
 /*Encabezado*/
     
@@ -174,3 +218,4 @@ nav a:hover{
         height: 17rem;
     }
 }
+    

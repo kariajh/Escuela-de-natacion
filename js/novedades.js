@@ -18,15 +18,27 @@ function validarTextos () {
         document.getElementById(campoid).focus();
         return 0;
     }
-    else {
+    else
+    {
+      // Valido el teléfono
+      let telefono = campos[2].value
+      telefono = (telefono.length < 12) ? ('54' + telefono) : telefono;
+      if (validarTelefono(telefono)) {
         alert("Muchas Gracias por su consulta. En breve nos comunicaremos con Ud.");
         document.formConsulta.submit();
+      }
+      else
+      {
+        alert("Debe ingresar un número de teléfono válido que incluya el código de área");
+        document.getElementById(campos[2].id).focus();
+        return 0;
+      }
     }
 }
 
-function validarTelefono(){
-    const url = 'https://api.apilayer.com/number_verification/validate?number='
-    let valido=false;
+function validarTelefono(telefono){
+    const pUrl = 'https://api.apilayer.com/number_verification/validate?number='
+    let valido = false;
     let myHeaders = new Headers();
     myHeaders.append("apikey", "YngdbKeQj4y7xZ6f5r75lxZQhr6LRLFk");
     
@@ -36,14 +48,11 @@ function validarTelefono(){
       headers: myHeaders
     };
     
-    fetch(url + "number", requestOptions)
-      .then(response => response.text())
-      .then(data => {
-        valido = data.valid;
+    fetch(pUrl + telefono, requestOptions)
+      .then(res => res.json())
+      .then(resultado => {
+        valido = resultado.valid;
       })
-      .then(result => console.log(result))
       .catch(error => console.log('error', error));
-    
-    
-  
+    return valido;
 }

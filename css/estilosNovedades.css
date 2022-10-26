@@ -17,7 +17,6 @@ body{
     position: relative;
     text-align: center;
     font-size: large;
-    border: 5%;
     top: 10em;
 }
 .articulo1 {
@@ -40,8 +39,6 @@ h1 {
 h2 {
     font-size: large;
     color: red;
-    text-align: auto;
-    /* margin: 0 25px; */
 }
 span {
     font-weight: bold;
@@ -54,7 +51,6 @@ span {
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: 35% 65%;*/
     column-gap: 5px;
     justify-content: space-around;
     align-content: center;
@@ -64,6 +60,7 @@ span {
 }
 .item2 {
     flex: 64%;
+    margin-right: 1%;
 }
 .articulo3 .item1,.item2 {
     flex: 33%;
@@ -115,7 +112,7 @@ form .etiqueta {
 input[type=text],input[type=email],input[type=tel]{
     width: 90%;
     border-radius: 5px;
-    align-items: left;
+    /* align-items: left; */
 }
 textarea {
     width: 90%;
@@ -123,7 +120,7 @@ textarea {
     border-radius: 5px;
     resize: none;
     box-sizing: border-box;
-    margin: 0.2 0.5em;
+    /* margin: 0.2 0.5em; */
 }
 input:focus,textarea:focus {
     border: 1px solid violet;
@@ -169,9 +166,9 @@ input:focus,textarea:focus {
 }
 
 /* iPad */
-@media only screen and (min-width: 450px) and (max-width: 810px) {
+@media only screen and (min-width: 450px) and (max-width: 466px) {
     .seccion {
-        top: 13rem;
+        top: 7rem;
         /* font-size: medium; */
     }
     .container img {
@@ -196,6 +193,83 @@ input:focus,textarea:focus {
         
     /* Footer */
     .piePagina {
+        margin-top: 8em;
+    }
+}
+
+@media only screen and (min-width: 466px) and (max-width: 690px) {
+    .seccion {
+        top: 7rem;
+        /* font-size: medium; */
+    }
+    .container img {
+        width: 13rem;
+    }    
+    .articulo1 h2 {
+        margin: 0 1em;
+        text-align: left;
+    }
+    .item1 {
+        flex: 35%;
+    }
+    .item2 {
+        flex: 64%;
+    }
+    .item2 table,th,td {
+        table-layout: auto;
+        border: 1px solid darkred;
+        margin: auto auto 5px;
+        font-size: small;
+    }
+        
+    /* Footer */
+    .piePagina {
+        margin-top: 8em;
+    }
+}
+
+@media only screen and (min-width: 690.1px) and (max-width: 706px) {
+    .seccion {
+        top: 13rem;
+        /* font-size: medium; */
+    }
+    .container img {
+        width: 16rem;
+        height: auto;
+    
+    }
+    .articulo1 h2 {
+        margin-left: 5rem;
+    }
+    table {
+        margin: 10px;
+    }
+                
+    /* Footer */
+    .piePagina {
         margin-top: 14em;
+    }
+}
+
+@media only screen and (min-width: 706px) and (max-width: 973px) {
+    .seccion {
+        top: 14rem;
+        /* font-size: medium; */
+    }
+    .container img {
+        width: 16rem;
+        height: auto;
+    
+    }
+    .articulo1 h2 {
+        margin-left: 5rem;
+    }
+    table {
+        margin: 10px;
+    }
+                
+    /* Footer */
+    .piePagina {
+        margin-top: 14.5em;
     }
 }

@@ -54,6 +54,7 @@ body {
         flex-direction: column;
         align-items: center;
         line-height: 0.5em;
+        /* height: auto; */
     }
     .contacto {
         width: 100%;
@@ -68,7 +69,28 @@ body {
 }
 
 /* iPad */
-@media only screen and (min-width: 450px) and (max-width: 690px) {
+@media only screen and (min-width: 450px) and (max-width: 466px) {
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 0.5em;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .contacto {
+        width: 60%;
+    }
+    .autores {
+        width: 40%;
+        /* margin-top: 0; */
+    }
+    .creditos {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 466.1px) and (max-width: 690px) {
     .contenedor {
         flex-direction: row;
         flex-wrap: wrap;
@@ -81,8 +103,7 @@ body {
     }
     .autores {
         width: 50%;
-        margin-top: 0;
-        
+        /* margin-top: 0; */
     }
     .creditos {
         flex-direction: column;
