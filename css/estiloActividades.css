@@ -77,6 +77,10 @@ body{
 a:hover{
     background: rgba(95, 160, 173, 0.447);
 }
+/* Footer */
+.piePagina {
+    margin-top: 0;
+}
 
 @media screen and (max-width:900px){
     header{
