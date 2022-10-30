@@ -29,14 +29,11 @@ body{
     bottom: 10%;
     right: 2%;
 }
-/* .piePagina {
-    background-color: rgb(39, 39, 172);
-    color: aquamarine;
-    font-size: x-small;
-    text-align: center;
-    height: 3vw;
-    width: 100%;
-} */
+
+/* Footer */
+.piePagina {
+    margin-top: 2em;
+}
 /*Bienvenida*/
 .bienvenida{
     width: 100%;

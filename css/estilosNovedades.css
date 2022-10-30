@@ -127,6 +127,12 @@ input:focus,textarea:focus {
     background-color: rgb(100, 29, 111);
     color: white;
 }
+.flecha {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+}
+
 
 /* Footer */
 .piePagina {
