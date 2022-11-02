@@ -1,4 +1,6 @@
 # Escuela-de-natacion Acquamarina
+# Curso 22535
+# Grupo 9
 
 # Integrantes:
 # Karina Ajhuacho DNI 35.163.706
