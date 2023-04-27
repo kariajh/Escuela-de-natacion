@@ -3,9 +3,9 @@
 # Grupo 9
 
 # Integrantes:
-# Karina Ajhuacho DNI 35.163.706
-# Alejandra Regueira DNI 18.248.964
-# Alicia Vazquez DNI 16.171.412 (líder)
+# Karina Ajhuacho
+# Alejandra Regueira
+# Alicia Vazquez (líder)
 
 # Tema:
 # Escuela de Natación Acquamarina
